@@ -1,0 +1,144 @@
+Felipe Diniz | Embraer | DXC EUA | 
+
+GIT | GITFLOW | GITLAB
+OO | SOLID
+CLEAN CODE
+TDD
+
+NEXUS, VERSIONADOR DE BIBLIOTECAS
+
+bitbucket -> gerenciador código fonte
+
+https://www.git-scm.com/download/win
+
++++++++++++++++++++++++++++++++++++++++++++++++
+com botão direito do mouse, no menu suspenso:
+	-> open git bash here
+	-> open git gui here
+
+
+aluno@DESKTOP-8SLHJJ7 MINGW64 /c
+	$ git config --global user.name "gitOMB"
+
+aluno@DESKTOP-8SLHJJ7 MINGW64 /c
+	$ git config --global user.email "obertonha@gmail.com"
+
+
+git clone #cria estrutura local
+
+aluno@DESKTOP-8SLHJJ7 MINGW64 /c
+	$ git clone https://github.com/gitOMB/fibSITE.git
+Cloning into 'fibSITE'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+aluno@DESKTOP-8SLHJJ7 MINGW64 /c
+	$ ls -l
+ 
+git add                       #inclui o arquivo no repositório 
+git commit -m "comentário"    #atualiza o repositório
+git push                      #envia o arquivo para o repositório
+git status                    #status dos arquivos / repositório
+git fetch                     #atualiza a pasta de trabalho a partir do repositório
+git pull                      #
+git checkout "nome da branch"
+
+git merge <name brach destino>
+
+git fork #cria uma cópia do projeto do repositório de outro para o meu
+
+=================================================================================
+
+> tortoise git
+> git krack
+	https://www.gitkraken.com/download/windows64
+	
+
+=================================================================================
+
+gitFLOW
+	Organizar estrutura de código fonte
+	<MASTER> ou <MAIN>
+		|
+		| -> Sempre controlar número da versão
+		|
+		------ <DESENV>
+					|
+					|
+					|
+					-------------- <FEATURE>
+										|
+										|
+										|
+					---------------------
+					|
+					|
+					|
+         ------------
+		|           |
+		|  release  |
+		|           |
+		-------------
+ 		
+2 formas de utilizar:
+
+-> A partir 2.5.3 gitFlow já presente no GIT				
+					
+					
+					
+=================================================================================
+XXXX|xxxxx|
+  XXX|XX|XX|
+
+
+GITFLOW -> 
+
+
+fibGIT
+
+
+
+=================================================================================
+
+> teoria dos gargalhos
+
+> integração continua (CI)
+  -> Servidor de CI (Jenkins) https://www.jenkins.io/
+  -> Sonar   https://www.sonarsource.com/
+  -> Nexus 
+  -> bamboo (PIPELINE)	https://www.atlassian.com/br/software/bamboo
+
+  
+
+> entrega contínua
+
+
+	O Bamboo, o Bitbucket e o Jira Software estão totalmente integrados e oferecem total rastreabilidade a partir do momento em que uma solicitação de recurso é feita ao longo do caminho até a implementação.
+
+
+  -> IC + automação testes + automação processos de implantação + infra estrutura como código + feedback rápido + estado implantável
+  
+-> implantação continua | pipeline de implantação
+
+
+-> integração, entrega e implantação continua
+
+
+
+
+=======================================
+
+gitLAB (ALM) -> pipeline -> plataforma DEVOPS -> 
+
+
+CI & CD -> https://medium.com/@ashwarypande_78026/ci-cd-with-bamboo-and-bit-bucket-9fb261e51261
+
+gitlab CI/CD
+
+configuração por tarefa: arquivo de configuração é escrito em YAML: O YAML é uma linguagem legível de serialização de dados muito usada na escrita de
+ arquivos de configuração.
+ 
+ .gitlab-ci.yml  -> What is the GitLab CI yml file used for?
+The . gitlab-ci. yml file defines scripts that should be run during the CI/CD pipeline and their scheduling, additional configuration files and templates, dependencies, caches, commands GitLab should run sequentially or in parallel, and instructions on where the application should be deployed to.
